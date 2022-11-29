@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7902134D28843A9500E1E018 /* ProjectTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902134C28843A9500E1E018 /* ProjectTileView.swift */; };
+		7902134F28843AA100E1E018 /* TaskTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902134E28843AA100E1E018 /* TaskTileView.swift */; };
+		7902135128843AAF00E1E018 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902135028843AAF00E1E018 /* PhotoPicker.swift */; };
+		7902135328843ABE00E1E018 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902135228843ABE00E1E018 /* ConfettiView.swift */; };
+		7902135528843B9000E1E018 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7902135428843B9000E1E018 /* Launch.storyboard */; };
+		7902135B28843C8400E1E018 /* PurchaseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902135628843B9700E1E018 /* PurchaseKit.xcframework */; };
+		7902135C28843C8400E1E018 /* PurchaseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7902135628843B9700E1E018 /* PurchaseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		792DD72B288072980019F4E7 /* TasklyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD72A288072980019F4E7 /* TasklyApp.swift */; };
+		792DD72F2880729A0019F4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792DD72E2880729A0019F4E7 /* Assets.xcassets */; };
+		792DD7322880729A0019F4E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792DD7312880729A0019F4E7 /* Preview Assets.xcassets */; };
+		792DD73B288072CC0019F4E7 /* DashboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD73A288072CC0019F4E7 /* DashboardContentView.swift */; };
+		792DD73D288072E40019F4E7 /* ProjectsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD73C288072E40019F4E7 /* ProjectsSectionView.swift */; };
+		792DD73F288072F00019F4E7 /* TasksSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD73E288072F00019F4E7 /* TasksSectionView.swift */; };
+		792DD741288073030019F4E7 /* AddProjectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD740288073030019F4E7 /* AddProjectContentView.swift */; };
+		792DD7432880730F0019F4E7 /* AddTaskOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD7422880730F0019F4E7 /* AddTaskOverlayView.swift */; };
+		792DD745288073180019F4E7 /* ProjectDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD744288073180019F4E7 /* ProjectDetailsContentView.swift */; };
+		792DD747288073210019F4E7 /* SideMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD746288073210019F4E7 /* SideMenuContentView.swift */; };
+		792DD7492880732A0019F4E7 /* PremiumContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD7482880732A0019F4E7 /* PremiumContentView.swift */; };
+		792DD74D2880734E0019F4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD74C2880734E0019F4E7 /* AppDelegate.swift */; };
+		792DD77228818C900019F4E7 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77128818C900019F4E7 /* ProjectModel.swift */; };
+		792DD77428818CA00019F4E7 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77328818CA00019F4E7 /* TaskModel.swift */; };
+		792DD77628818CC60019F4E7 /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77528818CC60019F4E7 /* HeaderButton.swift */; };
+		792DD77928818CEC0019F4E7 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77728818CEC0019F4E7 /* Database.xcdatamodeld */; };
+		792DD77B28818CF80019F4E7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77A28818CF80019F4E7 /* DataManager.swift */; };
+		792DD77D28818D0D0019F4E7 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DD77C28818D0D0019F4E7 /* AppConfig.swift */; };
+		79AE69AB28875A2C00BDB691 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 79AE69AA28875A2C00BDB691 /* GoogleMobileAds */; };
+		B2D0F3DC288F8AEE00C4B244 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = B2D0F3DB288F8AEE00C4B244 /* GoogleMobileAds */; };
+		B2DB3C8F288FB86D005392DB /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3C8E288FB86D005392DB /* PreviewData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7902135D28843C8400E1E018 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7902135C28843C8400E1E018 /* PurchaseKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7902134C28843A9500E1E018 /* ProjectTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTileView.swift; sourceTree = "<group>"; };
+		7902134E28843AA100E1E018 /* TaskTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTileView.swift; sourceTree = "<group>"; };
+		7902135028843AAF00E1E018 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		7902135228843ABE00E1E018 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		7902135428843B9000E1E018 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		7902135628843B9700E1E018 /* PurchaseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PurchaseKit.xcframework; sourceTree = "<group>"; };
+		7902135828843BB100E1E018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		792DD727288072980019F4E7 /* ZenTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		792DD72A288072980019F4E7 /* TasklyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasklyApp.swift; sourceTree = "<group>"; };
+		792DD72E2880729A0019F4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		792DD7312880729A0019F4E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		792DD73A288072CC0019F4E7 /* DashboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContentView.swift; sourceTree = "<group>"; };
+		792DD73C288072E40019F4E7 /* ProjectsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsSectionView.swift; sourceTree = "<group>"; };
+		792DD73E288072F00019F4E7 /* TasksSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksSectionView.swift; sourceTree = "<group>"; };
+		792DD740288073030019F4E7 /* AddProjectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectContentView.swift; sourceTree = "<group>"; };
+		792DD7422880730F0019F4E7 /* AddTaskOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskOverlayView.swift; sourceTree = "<group>"; };
+		792DD744288073180019F4E7 /* ProjectDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsContentView.swift; sourceTree = "<group>"; };
+		792DD746288073210019F4E7 /* SideMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContentView.swift; sourceTree = "<group>"; };
+		792DD7482880732A0019F4E7 /* PremiumContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumContentView.swift; sourceTree = "<group>"; };
+		792DD74C2880734E0019F4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		792DD77128818C900019F4E7 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		792DD77328818CA00019F4E7 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		792DD77528818CC60019F4E7 /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
+		792DD77828818CEC0019F4E7 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		792DD77A28818CF80019F4E7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		792DD77C28818D0D0019F4E7 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B2DB3C8E288FB86D005392DB /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewData.swift; path = ZenTasks/PreviewData.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		792DD724288072980019F4E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D0F3DC288F8AEE00C4B244 /* GoogleMobileAds in Frameworks */,
+				79AE69AB28875A2C00BDB691 /* GoogleMobileAds in Frameworks */,
+				7902135B28843C8400E1E018 /* PurchaseKit.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792DD71E288072980019F4E7 = {
+			isa = PBXGroup;
+			children = (
+				792DD729288072980019F4E7 /* ZenTasks */,
+				792DD728288072980019F4E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		792DD728288072980019F4E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				792DD727288072980019F4E7 /* ZenTasks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		792DD729288072980019F4E7 /* ZenTasks */ = {
+			isa = PBXGroup;
+			children = (
+				792DD74A2880732E0019F4E7 /* Views */,
+				792DD739288072BC0019F4E7 /* Flows */,
+				792DD74B288073370019F4E7 /* Models */,
+				792DD738288072AC0019F4E7 /* Lifecycle */,
+				792DD74E288073580019F4E7 /* DataManager */,
+				792DD74F288073630019F4E7 /* Configuration */,
+				7902135628843B9700E1E018 /* PurchaseKit.xcframework */,
+				7902135428843B9000E1E018 /* Launch.storyboard */,
+				792DD72E2880729A0019F4E7 /* Assets.xcassets */,
+				7902135828843BB100E1E018 /* Info.plist */,
+				792DD7302880729A0019F4E7 /* Preview Content */,
+			);
+			path = ZenTasks;
+			sourceTree = "<group>";
+		};
+		792DD7302880729A0019F4E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				792DD7312880729A0019F4E7 /* Preview Assets.xcassets */,
+				B2DB3C8E288FB86D005392DB /* PreviewData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		792DD738288072AC0019F4E7 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				792DD72A288072980019F4E7 /* TasklyApp.swift */,
+				792DD74C2880734E0019F4E7 /* AppDelegate.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		792DD739288072BC0019F4E7 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				792DD73A288072CC0019F4E7 /* DashboardContentView.swift */,
+				792DD73C288072E40019F4E7 /* ProjectsSectionView.swift */,
+				792DD73E288072F00019F4E7 /* TasksSectionView.swift */,
+				792DD740288073030019F4E7 /* AddProjectContentView.swift */,
+				792DD7422880730F0019F4E7 /* AddTaskOverlayView.swift */,
+				792DD744288073180019F4E7 /* ProjectDetailsContentView.swift */,
+				792DD746288073210019F4E7 /* SideMenuContentView.swift */,
+				792DD7482880732A0019F4E7 /* PremiumContentView.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		792DD74A2880732E0019F4E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				792DD77528818CC60019F4E7 /* HeaderButton.swift */,
+				7902134C28843A9500E1E018 /* ProjectTileView.swift */,
+				7902134E28843AA100E1E018 /* TaskTileView.swift */,
+				7902135028843AAF00E1E018 /* PhotoPicker.swift */,
+				7902135228843ABE00E1E018 /* ConfettiView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		792DD74B288073370019F4E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				792DD77128818C900019F4E7 /* ProjectModel.swift */,
+				792DD77328818CA00019F4E7 /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		792DD74E288073580019F4E7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				792DD77728818CEC0019F4E7 /* Database.xcdatamodeld */,
+				792DD77A28818CF80019F4E7 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		792DD74F288073630019F4E7 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				792DD77C28818D0D0019F4E7 /* AppConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		792DD726288072980019F4E7 /* ZenTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792DD7352880729A0019F4E7 /* Build configuration list for PBXNativeTarget "ZenTasks" */;
+			buildPhases = (
+				792DD723288072980019F4E7 /* Sources */,
+				792DD724288072980019F4E7 /* Frameworks */,
+				792DD725288072980019F4E7 /* Resources */,
+				7902135D28843C8400E1E018 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZenTasks;
+			packageProductDependencies = (
+				79AE69AA28875A2C00BDB691 /* GoogleMobileAds */,
+				B2D0F3DB288F8AEE00C4B244 /* GoogleMobileAds */,
+			);
+			productName = Taskly;
+			productReference = 792DD727288072980019F4E7 /* ZenTasks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		792DD71F288072980019F4E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					792DD726288072980019F4E7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 792DD722288072980019F4E7 /* Build configuration list for PBXProject "ZenTasks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 792DD71E288072980019F4E7;
+			packageReferences = (
+				79AE69A928875A2C00BDB691 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 792DD728288072980019F4E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				792DD726288072980019F4E7 /* ZenTasks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792DD725288072980019F4E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792DD7322880729A0019F4E7 /* Preview Assets.xcassets in Resources */,
+				792DD72F2880729A0019F4E7 /* Assets.xcassets in Resources */,
+				7902135528843B9000E1E018 /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		792DD723288072980019F4E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792DD77928818CEC0019F4E7 /* Database.xcdatamodeld in Sources */,
+				792DD77D28818D0D0019F4E7 /* AppConfig.swift in Sources */,
+				792DD77B28818CF80019F4E7 /* DataManager.swift in Sources */,
+				792DD745288073180019F4E7 /* ProjectDetailsContentView.swift in Sources */,
+				792DD7432880730F0019F4E7 /* AddTaskOverlayView.swift in Sources */,
+				7902134F28843AA100E1E018 /* TaskTileView.swift in Sources */,
+				792DD72B288072980019F4E7 /* TasklyApp.swift in Sources */,
+				7902134D28843A9500E1E018 /* ProjectTileView.swift in Sources */,
+				7902135328843ABE00E1E018 /* ConfettiView.swift in Sources */,
+				792DD7492880732A0019F4E7 /* PremiumContentView.swift in Sources */,
+				792DD73B288072CC0019F4E7 /* DashboardContentView.swift in Sources */,
+				B2DB3C8F288FB86D005392DB /* PreviewData.swift in Sources */,
+				792DD747288073210019F4E7 /* SideMenuContentView.swift in Sources */,
+				792DD77428818CA00019F4E7 /* TaskModel.swift in Sources */,
+				792DD73D288072E40019F4E7 /* ProjectsSectionView.swift in Sources */,
+				7902135128843AAF00E1E018 /* PhotoPicker.swift in Sources */,
+				792DD77628818CC60019F4E7 /* HeaderButton.swift in Sources */,
+				792DD73F288072F00019F4E7 /* TasksSectionView.swift in Sources */,
+				792DD74D2880734E0019F4E7 /* AppDelegate.swift in Sources */,
+				792DD741288073030019F4E7 /* AddProjectContentView.swift in Sources */,
+				792DD77228818C900019F4E7 /* ProjectModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		792DD7332880729A0019F4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		792DD7342880729A0019F4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		792DD7362880729A0019F4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZenTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = 943GWYJUDH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZenTasks/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "App would like to access IDFA for tracking purpose";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bb.ZenTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		792DD7372880729A0019F4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZenTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = 943GWYJUDH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZenTasks/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "App would like to access IDFA for tracking purpose";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bb.ZenTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		792DD722288072980019F4E7 /* Build configuration list for PBXProject "ZenTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792DD7332880729A0019F4E7 /* Debug */,
+				792DD7342880729A0019F4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792DD7352880729A0019F4E7 /* Build configuration list for PBXNativeTarget "ZenTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792DD7362880729A0019F4E7 /* Debug */,
+				792DD7372880729A0019F4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79AE69A928875A2C00BDB691 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79AE69AA28875A2C00BDB691 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79AE69A928875A2C00BDB691 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		B2D0F3DB288F8AEE00C4B244 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79AE69A928875A2C00BDB691 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		792DD77728818CEC0019F4E7 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				792DD77828818CEC0019F4E7 /* Database.xcdatamodel */,
+			);
+			currentVersion = 792DD77828818CEC0019F4E7 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 792DD71F288072980019F4E7 /* Project object */;
+}
