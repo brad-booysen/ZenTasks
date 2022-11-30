@@ -31,7 +31,7 @@ class AppConfig {
     // MARK: - In App Purchases
     static let premiumVersion: String = "ZenTasks.Premium"
     static let freeProjectBackgroundsCount = 3
-    static let freeProjectsCount: Int = 1
+    static let freeProjectsCount: Int = 3
     static let freeTasksCount: Int = 10
 }
 

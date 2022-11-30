@@ -28,20 +28,28 @@ struct TasksSectionView: View {
     private var CustomHeaderView: some View {
         HStack {
             VStack(alignment: .center,spacing: 2) {
-                Text(allProjectTasks ? "All Project Tasks" : "Tasks")
+                Text(allProjectTasks ? "Project Tasks" : "Tasks")
                     .font(.system(size: 30, weight: .semibold))
                 ZStack{
                     Rectangle()
                         .frame(height: 1)
                     HeaderButton(title: allProjectTasks ? "New Task" : "Add", image: allProjectTasks ? "plus" : nil) {
                         manager.showAddTaskOverlay = true
-                    }.disabled(allProjectTasks)
-
+                        exitFlow()
+                    }
                 }
             }
             Spacer()
         }
         .padding().padding(.top, -5).foregroundColor(.extraDarkGrayColor)
+    }
+    
+    /// Exit project details flow
+    private func exitFlow() {
+        manager.fullScreenMode = nil
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            manager.selectedProject = nil
+        }
     }
     
     /// Tasks filter view

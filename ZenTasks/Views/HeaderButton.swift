@@ -28,8 +28,6 @@ struct HeaderButton: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
-                    
-                   
             }
             .padding(.horizontal, 33).padding(.vertical, 7)
             .background(Color.customBlue.cornerRadius(20))
